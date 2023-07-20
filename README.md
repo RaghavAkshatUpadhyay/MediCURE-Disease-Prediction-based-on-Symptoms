@@ -17,10 +17,6 @@ https://user-images.githubusercontent.com/107244393/235594013-79ac30cd-e462-4601
 
 •	Deploy the application on a cloud platform, AWS.
 
-•	The application is secured using AWS WAF and AWS Application Load Balancer.
-
-•	Deploy the application on a Docker container to streamline the development lifecycle.
-
 •	Comparative Analysis of models like Logistic regression, SVM, Multilayer Perceptron, ANN, Naive-Bayes, Decision-tree, and some variations of decision tree like XGBoost, etc., to check for the best suitability for predicting the disease.
 
 •	This will help people get a better idea of what they may be suffering from instead of a Random Google search that predicts even symptoms of the common cold as something grave but we need to remember that this tool does not provide medical advice. It is intended for information purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment
@@ -33,11 +29,7 @@ The dataset is taken from Kaggle as secondary data. It comprises of 8836 rows an
 The dataset used are in the Dataset Folder.
 The dataset for Treatment is named as cure_minor.xlsx
 
-### Deployment
-During our development phase, we used dev containers which will deploy the project built on so that it provides a reliable and consistent environment throughout the project. The complete application is also deployed on docker, an image is built and pushed to Docker Hub from where any user can pull the image, helped to remove all the dependency issues that might arise due to differences in the environment. We have also created an EC2 instance and then a target group for the created  EC2 instance. Configuring the request protocol and setting it to HTTP/1.1 helps to easily and reliably communicate between WAF and EC2. After the integration of WAF, we will be using Application Load Balancers so as to easily distribute the workload. We then associated our web ACL (Access Control List) with the load balancers to further add an extra layer of security in our application.
-![image](https://user-images.githubusercontent.com/107244393/235596568-b828950e-68c0-4499-817c-d7a2faca64b5.png)
-![image](https://user-images.githubusercontent.com/107244393/235596585-9c501ce2-f2da-4431-bfe4-49f21b93e2c4.png)
-![image](https://user-images.githubusercontent.com/107244393/235596629-7a18d4f5-14b9-4525-8b08-582372b0d40d.png)
+
 
 
 
